@@ -1,0 +1,28 @@
+{
+  "name": "px-code-design",
+  "version": "0.0.1",
+  "authors": [
+    "General Electric"
+  ],
+  "description": "Code snippets for Predix Experience",
+  "main": "_base.code.scss",
+  "keywords": [
+    "code",
+    "px",
+    "sass"
+  ],
+  "license": "Apache 2",
+  "homepage": "git://github.sw.ge.com/pxc/px-code-design.git",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "inuit-defaults": "~0.2.2",
+    "px-functions-design": "git://github.sw.ge.com/pxc/px-functions-design.git#master"
+  }
+}
