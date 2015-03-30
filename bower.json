@@ -12,7 +12,7 @@
     "sass"
   ],
   "license": "Apache 2",
-  "homepage": "git://github.sw.ge.com/pxc/px-code-design.git",
+  "homepage": "git://github.sw.ge.com/PXd/px-code-design.git",
   "private": true,
   "ignore": [
     "**/.*",
@@ -23,6 +23,6 @@
   ],
   "dependencies": {
     "inuit-defaults": "~0.2.2",
-    "px-functions-design": "git://github.sw.ge.com/pxc/px-functions-design.git#master"
+    "px-functions-design": "git://github.sw.ge.com/PXd/px-functions-design.git#master"
   }
 }
