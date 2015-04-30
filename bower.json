@@ -1,6 +1,6 @@
 {
   "name": "px-code-design",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "authors": [
     "General Electric"
   ],
@@ -22,7 +22,7 @@
     "tests"
   ],
   "dependencies": {
-    "px-defaults-design": "git://github.sw.ge.com/PXd/px-defaults-design.git#master",
-    "px-functions-design": "git://github.sw.ge.com/PXd/px-functions-design.git#master"
+    "px-defaults-design": "git://github.sw.ge.com/PXd/px-defaults-design.git#~0.1.0",
+    "px-functions-design": "git://github.sw.ge.com/PXd/px-functions-design.git#~0.1.0"
   }
 }
