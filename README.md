@@ -12,7 +12,7 @@ You can review Sass Documentation here: https://github.build.ge.com/pages/PXd/px
 
 ## Dependencies
 
-Px's Code module depends on three other Px and inuitcss modules:
+Px's Code module depends on two other Px and inuitcss modules:
 
 * [px-colors-design](https://github.build.ge.com/PXd/px-colors-design)
 * [px-defaults-design](https://github.build.ge.com/PXd/px-defaults-design)
