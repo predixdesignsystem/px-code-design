@@ -1,26 +1,51 @@
-/*------------------------------------*\
-    #PX-CODE-DESIGN
-\*------------------------------------*/
-
-/**
-* Code snippet stylings
-*/
+////
+/// PX-CODE-DESIGN
+/// Code snippet styles
+/// @group px-code-design
+////
 
 @import "../px-defaults-design/settings.defaults";
-@import "../px-functions-design/tools.functions";
+@import "../px-colors-design/settings.colors";
 
-// Predefine the variables below in order to alter and enable specific features.
-$inuit-box-namespace        : $inuit-namespace !default;
+/// @type String [default] - Prepend value for all generated classes
+$inuit-code-namespace       : $inuit-namespace !default;
+
+/// @type Color [default] - Font color
+$inuit-code-color           : $primary-blue-pressed !default;
+
+/// @type Color [default] - Background color
+$inuit-code-background      : $gray1 !default;
+
+/// @type Color [default] - Border color
+$inuit-code-border-color    : $gray3 !default;
+
+/// @type Boolean [default] - Produce CSS for inline code snippets?
+$inuit-enable-code--inline  : false !default;
 
 @if import-once('base.code') {
   
-  .#{$inuit-box-namespace}code,
-  %#{$inuit-box-namespace}code {
-    border: 1px solid rgb(229,229,229);
+  .#{$inuit-code-namespace}code,
+  %#{$inuit-code-namespace}code {
+    border: 1px solid $inuit-code-border-color;
     padding: $inuit-base-spacing-unit;
-    border-radius: .25em;
-    background-color: rgb(247,247,247);
-    color: rgb(47, 111, 159);
+    border-radius: 3px;
+    background-color: $inuit-code-background;
+    color: $inuit-code-color;
+  }
+  
+  @if ($inuit-enable-code--inline == true) {
+    
+    /**
+     * Slight tweaks for code inline.
+     */
+  
+    .#{$inuit-code-namespace}code--inline,
+    %#{$inuit-code-namespace}code--inline {
+      border-radius: 0;
+      padding: 0 $inuit-base-spacing-unit--tiny;
+      font-size: inherit;
+    }
+  
   }
 
 }
