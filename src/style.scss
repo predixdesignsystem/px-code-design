@@ -1,0 +1,24 @@
+$imported-once-files            : ();
+
+// Settings
+@import "../px-colors-design/settings.colors";
+
+// Generic
+@import "../px-normalize-design/generic.normalize";
+@import "../px-box-sizing-design/generic.box-sizing";
+@import "../px-helpers-design/generic.helpers";
+
+// Base
+@import "../px-viewport-design/base.viewport";
+@import "../px-typography-design/base.typography";
+
+// Code
+$inuit-enable-code--inline      : true;
+
+@import "../base.code";
+
+// Trumps
+$inuit-enable-margins--large    : true;
+$inuit-enable-margins--huge     : true;
+
+@import "../px-spacing-responsive-design/trumps.spacing-responsive";
