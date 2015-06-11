@@ -1,6 +1,6 @@
 # Code
 
-The Code module provides styling for code snippets.
+The Predix Experience Code module provides styling for code snippets.
 
 ## Demo
 
@@ -12,7 +12,7 @@ You can review Sass Documentation here: https://github.build.ge.com/pages/PXd/px
 
 ## Dependencies
 
-Px's Code module depends on two other Px and inuitcss modules:
+Px's Code module depends on two other Px modules:
 
 * [px-colors-design](https://github.build.ge.com/PXd/px-colors-design)
 * [px-defaults-design](https://github.build.ge.com/PXd/px-defaults-design)
@@ -37,7 +37,7 @@ All rulesets are wrapped in the following `@if` statement:
 
 ## Usage
 
-These flags are available and, if needed, should be set to `true` prior to importing the module:
+This flag is available and, if needed, should be set to `true` prior to importing the module:
 
     $inuit-enable-code--inline
 
@@ -47,7 +47,7 @@ The following color variables can be customized:
     $inuit-code-background
     $inuit-code-border-color
 
-Basic usage of the Code object uses the required classes:
+Basic usage of the Code object uses a required class:
 
     <figure class="code">
       <code>
@@ -57,6 +57,6 @@ Basic usage of the Code object uses the required classes:
 
 ## Options
 
-Other, optional classes can supplement the required base classes. These classes are available if the variable flags listed above are set to `true`:
+Another, optional class can supplement the required base class. This class is available if the variable flag listed above is set to `true`:
 
-* `code--inline`: styles for inline code snippets.
+* `code--inline`: style for inline code snippets.
