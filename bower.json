@@ -1,6 +1,6 @@
 {
   "name": "px-code-design",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "authors": [
     "General Electric"
   ],
@@ -26,6 +26,6 @@
     "px-defaults-design": "git://github.build.ge.com/PXd/px-defaults-design.git#~0.1.0"
   },
   "devDependencies": {
-    "px-starter-kit-design": "git://github.build.ge.com/PXd/px-starter-kit-design.git#~0.1.0"
+    "px-starter-kit-design": "git://github.build.ge.com/PXd/px-starter-kit-design.git#~0.2.0"
   }
 }
