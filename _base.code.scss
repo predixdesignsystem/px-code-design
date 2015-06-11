@@ -24,6 +24,11 @@ $inuit-enable-code--inline  : false !default;
 
 @if import-once('base.code') {
   
+  code {
+    font-size: 1rem;
+    font-family: monospace, monospace;
+  }
+  
   .#{$inuit-code-namespace}code,
   %#{$inuit-code-namespace}code {
     border: 1px solid $inuit-code-border-color;
