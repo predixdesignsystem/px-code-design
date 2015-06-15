@@ -4,8 +4,8 @@
 /// @group px-code-design
 ////
 
-@import "../px-defaults-design/settings.defaults";
-@import "../px-colors-design/settings.colors";
+@import "px-defaults-design/_settings.defaults.scss";
+@import "px-colors-design/_settings.colors.scss";
 
 /// @type String [default] - Prepend value for all generated classes
 $inuit-code-namespace       : $inuit-namespace !default;
@@ -22,35 +22,32 @@ $inuit-code-border-color    : $gray3 !default;
 /// @type Boolean [default] - Produce CSS for inline code snippets?
 $inuit-enable-code--inline  : false !default;
 
-@if import-once('base.code') {
   
-  code {
-    font-size: 1rem;
-    font-family: monospace, monospace;
-  }
+code {
+  font-size: 1rem;
+  font-family: monospace, monospace;
+}
+
+.#{$inuit-code-namespace}code,
+%#{$inuit-code-namespace}code {
+  border: 1px solid $inuit-code-border-color;
+  padding: $inuit-base-spacing-unit;
+  border-radius: 3px;
+  background-color: $inuit-code-background;
+  color: $inuit-code-color;
+}
+
+@if ($inuit-enable-code--inline == true) {
   
-  .#{$inuit-code-namespace}code,
-  %#{$inuit-code-namespace}code {
-    border: 1px solid $inuit-code-border-color;
-    padding: $inuit-base-spacing-unit;
-    border-radius: 3px;
-    background-color: $inuit-code-background;
-    color: $inuit-code-color;
-  }
-  
-  @if ($inuit-enable-code--inline == true) {
-    
-    /**
-     * Slight tweaks for code inline.
-     */
-  
-    .#{$inuit-code-namespace}code--inline,
-    %#{$inuit-code-namespace}code--inline {
-      border-radius: 0;
-      padding: 0 $inuit-base-spacing-unit--tiny;
-      font-size: inherit;
-    }
-  
+  /**
+   * Slight tweaks for code inline.
+   */
+
+  .#{$inuit-code-namespace}code--inline,
+  %#{$inuit-code-namespace}code--inline {
+    border-radius: 0;
+    padding: 0 $inuit-base-spacing-unit--tiny;
+    font-size: inherit;
   }
 
 }
