@@ -1,6 +1,6 @@
 {
   "name": "px-code-design",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Code snippets for Predix Experience",
   "private": true,
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.build.ge.com/PXd/px-code-design.git"
+    "url": "https://github.build.ge.com/PXd/px-code-design.git"
   },
   "author": "General Electric",
   "license": "Apache 2",
