@@ -2,13 +2,10 @@
 
 The Predix Experience Code module provides styling for code snippets.
 
-## Demo
 
-You can review Code styles and recommended markup here: https://github.com/pages/PredixDev/px-code-design
 
-## Sass Docs
 
-You can review Sass Documentation here: https://github.com/pages/PredixDev/px-code-design/sassdoc
+
 
 ## Dependencies
 
