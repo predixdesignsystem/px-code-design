@@ -1,0 +1,33 @@
+{
+  "name": "px-code-design",
+  "version": "0.2.7",
+  "authors": [
+    "General Electric"
+  ],
+  "description": "Code snippets for Predix Experience",
+  "main": "_base.code.scss",
+  "keywords": [
+    "code",
+    "px",
+    "sass"
+  ],
+  "license": "Apache 2",
+  "homepage": "https://github.com/PredixDev/px-code-design.git",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "px-colors-design": "https://github.com/PredixDev/px-colors-design.git#~0.2.0",
+    "px-defaults-design": "https://github.com/PredixDev/px-defaults-design.git#~0.2.0"
+  },
+  "devDependencies": {
+    "px-buttons-design": "https://github.com/PredixDev/px-buttons-design.git#~0.4.0",
+    "px-iconography-design": "https://github.com/PredixDev/px-iconography-design.git#~0.2.0",
+    "px-starter-kit-design": "https://github.com/PredixDev/px-starter-kit-design.git#~0.4.0"
+  }
+}

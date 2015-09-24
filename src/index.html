@@ -1,0 +1,104 @@
+<!-- build:remove -->
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <meta charset=utf-8>
+    <title>Code</title>
+    <link rel=stylesheet href=css/style.css>
+  </head>
+  <body>
+    <section class=viewport role=region>
+      <!-- /build -->
+      <h1>Code</h1>
+      <div class="flex flex--justify flex--wrap flex--baseline">
+        <p>
+          To use this module, follow the instructions in the
+          <a href=https://github.com/PredixDev/px-code-design>README</a>.
+          <!-- build:remove -->
+          (For background on PXd, read the
+          <a href=https://github.com/PredixDev/px-getting-started>Getting Started</a>
+          documentation.)
+          <!-- /build -->
+        </p>
+        <a class="btn btn--primary" href=https://github.com/PredixDev/px-code-design>
+          <i class="fa fa-github u-mr--"></i>
+          px-code-design
+        </a>
+      </div>
+      <h2>How to Use</h2>
+      <p>Install via command line:</p>
+      <figure class="code u-mb+">
+        <code>
+          bower install --save https://github.com/PredixDev/px-code-design.git
+        </code>
+      </figure>
+      <p>Add to component Sass file:</p>
+      <figure class="code u-mb++">
+        <code>
+          @import "px-code-design/_base.code.scss";
+        </code>
+      </figure>
+      <h2>Code Block</h2>
+      <figure class="code u-mb+">
+        <code>
+          &lt;figure class=code&gt;
+          <br>
+          &nbsp;&nbsp;&lt;code&gt;
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&hellip;
+          <br>
+          &nbsp;&nbsp;&lt;/code&gt;
+          <br>
+          &lt;/figure&gt;
+        </code>
+      </figure>
+      <figure class="code u-mb++">
+        <code>
+          &lt;h1&gt;Heading 1&lt;/h1&gt;
+          <br>
+          &lt;p&gt;Paragraph&lt;/p&gt;
+          <br>
+          &lt;ol&gt;
+          <br>
+          &nbsp;&nbsp;&lt;li&gt;Ordered List Item&lt;/li&gt;
+          <br>
+          &nbsp;&nbsp;&lt;li&gt;Ordered List Item&lt;/li&gt;
+          <br>
+          &lt;/ol&gt;
+          <br>
+          &lt;script&gt;
+          <br>
+          &nbsp;&nbsp;var snippet = document.getElementById('codeSnippet');
+          <br>
+          &lt;/script&gt;
+        </code>
+      </figure>
+      <h2>Inline Code</h2>
+      <h3>Sass Flag</h3>
+      <figure class="code">
+        <code>
+          $inuit-enable-code--inline : true;
+        </code>
+      </figure>
+      <small>
+        Flag must be set before
+        <code class="code code--inline">@import</code>
+        in component Sass file.
+      </small>
+      <h3>HTML</h3>
+      <figure class="code u-mb+">
+        <code>
+          &lt;code class="code code--inline"&gt;&hellip;&lt;/code&gt;
+        </code>
+      </figure>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis
+        <code class="code code--inline">&lt;span&gt;&hellip;&lt;/span&gt;</code>
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    <!-- build:remove -->
+    </section>
+  </body>
+</html>
+<!-- /build -->
