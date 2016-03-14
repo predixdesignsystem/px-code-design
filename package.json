@@ -1,8 +1,8 @@
 {
   "name": "px-code-design",
-  "version": "0.2.9",
+  "version": "0.2.10",
   "description": "Code snippets for Predix Experience",
-  "private": true,
+  "private": false,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
