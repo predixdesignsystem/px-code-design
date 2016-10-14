@@ -21,56 +21,75 @@
 <!-- 1: Describe Module -->
 <px-sass-doc
   module-name="px-code-design"
-  description="Toggle is a simple on/off switch. It's created with CSS applied to a checkbox and label. Use it to create simple UI elements that enable and disable things."
+  description="Predix UI Input Group module is a simple implementation of input groups. Add elements to an input field for context and/or inline actions."
   layer="objects"
   sassdoc-path="sassdoc.json"
   dependencies='[
-    "https://github.com/PredixDev/px-colors-design",
-    "https://github.com/PredixDev/px-defaults-design",
-    "https://github.com/PredixDev/px-helpers-design"
+    "https://github.com/PredixDev/px-forms-design",
+    "https://github.com/PredixDev/px-colors-design"
   ]'
-  selected-options="{{selectedOptions}}">
+  selected-options="{{selectedOptions}}"
+  tabs='["Default","Inline"]' selected-tab="{{selectedTab}}">
 
-<!-- 2: Set Options -->
-<px-sass-doc-option
-  option-name="Size"
-  choose-with="dropdown"
-  choices='[
-    "small",
-    "regular (default)",
-    "large",
-    "huge"
-  ]'
-  default-choice="regular (default)">
-</px-sass-doc-option>
+<!-- FOR 'DEFAULT' TAB -->
+<template is="dom-if" if="[[_tabIs('Default',selectedTab)]]" restamp="true">
 
-<!-- 3: Make HTML Demo -->
-<section data-slot="demoHTML" id="demoContainer">
-<input id="exampleToggle" class$="{{inputClasses}}" type="checkbox" />
-<label for="exampleToggle" class$="{{labelClasses}}"></label>
+<section data-slot="demoHTML">
+
+<figure class="code">
+  <code>
+    &lt;h1&gt;Heading 1&lt;/h1&gt;
+    <br>
+    &lt;p&gt;Paragraph&lt;/p&gt;
+    <br>
+    &lt;ol&gt;
+    <br>
+    &nbsp;&nbsp;&lt;li&gt;Ordered List Item&lt;/li&gt;
+    <br>
+    &nbsp;&nbsp;&lt;li&gt;Ordered List Item&lt;/li&gt;
+    <br>
+    &lt;/ol&gt;
+  </code>
+</figure>
 </section>
 
-<!-- 4: Set Import Slot -->
 <section data-slot="import">
-{{importCode}}
+@import 'px-input-group-design/_objects.input-group.scss';
 </section>
+
+</template>
+
+<!-- FOR 'OTHER' TAB -->
+<template is="dom-if" if="[[_tabIs('Inline',selectedTab)]]" restamp="true">
+
+<section data-slot="demoHTML">
+
+Flag must be set before <code class="code code--inline">@import</code> in component Sass file.
+
+</section>
+
+<section data-slot="import">
+$inuit-enable-code--inline  : true;
+@import 'px-input-group-design/_objects.input-group.scss';
+</section>
+
+</template>
+
 
 <!-- 5: Set Usage HTML -->
 <section data-slot="usage">
 Use the following HTML to set up your project:
 ```
-<!-- Default toggle -->
-<input id="toggle2" class="toggle__input" type="checkbox">
-<label for="toggle2" class="toggle__label"></label>
-<!-- Small toggle -->
-<input id="toggle3" class="toggle__input toggle__input--small" type="checkbox">
-<label for="toggle3" class="toggle__label toggle__label--small"></label>
-<!-- Large toggle -->
-<input id="toggle4" class="toggle__input toggle__input--large" type="checkbox">
-<label for="toggle4" class="toggle__label toggle__label--large"></label>
-<!-- Huge toggle -->
-<input id="toggle5" class="toggle__input toggle__input--huge" type="checkbox">
-<label for="toggle5" class="toggle__label toggle__label--huge"></label>
+<!-- Code Block -->
+<figure class="code">
+  <code>
+    &hellip;
+  </code>
+</figure>
+
+<!-- Code Inline -->
+<code class="code code--inline">&hellip;</code>
+
 ```
 </section>
 
@@ -81,41 +100,10 @@ Use the following HTML to set up your project:
 <script>
   var template = document.querySelector('template[is=dom-bind]');
 
-  document.addEventListener('px-sass-doc-options-updated', function(evt) {
-    template.inputClasses = template._inputClasses();
-    template.labelClasses = template._labelClasses();
-    template.importCode = template._importCode();
-  });
-
-  template._inputClasses = function() {
-    var opts = template.selectedOptions || {}, strings = [];
-
-    if (opts.Size === "small")    strings.push("toggle__input--small");
-    if (opts.Size === "large")    strings.push("toggle__input--large");
-    if (opts.Size === "huge")     strings.push("toggle__input--huge");
-
-    return ("toggle__input " + strings.join(" ")).trim();
-  };
-
-  template._labelClasses = function() {
-    var opts = template.selectedOptions || {}, strings = [];
-
-    if (opts.Size === "small")    strings.push("toggle__label--small");
-    if (opts.Size === "large")    strings.push("toggle__label--large");
-    if (opts.Size === "huge")     strings.push("toggle__label--huge");
-
-    return ("toggle__label " + strings.join(" ")).trim();
-  };
-
-  template._importCode = function() {
-    var opts = template.selectedOptions || {}, strings = [];
-
-    if (opts.Size === "small")    strings.push("inuit-enable-toggle--small : true;");
-    if (opts.Size === "large")    strings.push("inuit-enable-toggle--large : true;");
-    if (opts.Size === "huge")     strings.push("inuit-enable-toggle--huge : true;");
-
-    return (strings.join("\n") + "\n@import 'px-toggle-design/_objects.toggle.scss';").trim();
-  };
+  template._tabIs = function(tabName) {
+    var selected = template.selectedTab || "";
+    return selected === tabName;
+  }
 </script>
 </body>
 </html>

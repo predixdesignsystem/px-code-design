@@ -7,22 +7,37 @@
 @import "px-defaults-design/_settings.defaults.scss";
 @import "px-colors-design/_settings.colors.scss";
 
-/// @type String [default] - Prepend value for all generated classes
+/// Sets a prepended value for all generated classes
+///
+/// @group px-code-design:variables:style
+/// @type String [default]
 $inuit-code-namespace       : $inuit-namespace !default;
 
-/// @type Color [default] - Font color
+/// Sets the code Font color.
+///
+/// @group px-code-design:variables:style
+/// @type Color [default]
 $inuit-code-color           : $primary-blue-pressed !default;
 
-/// @type Color [default] - Background color
+/// Sets the code Background color.
+///
+/// @group px-code-design:variables:style
+/// @type Color [default]
 $inuit-code-background      : $gray1 !default;
 
-/// @type Color [default] - Border color
+/// Sets the code Border color.
+///
+/// @group px-code-design:variables:style
+/// @type Color [default]
 $inuit-code-border-color    : $gray3 !default;
 
-/// @type Boolean [default] - Produce CSS for inline code snippets?
+/// Generates the CSS for inline code snippets
+///
+/// @group px-code-design:variables:flag
+/// @type Boolean [default]
 $inuit-enable-code--inline  : false !default;
 
-  
+
 code {
   font-size: 1rem;
   font-family: monospace, monospace;
@@ -38,7 +53,7 @@ code {
 }
 
 @if ($inuit-enable-code--inline == true) {
-  
+
   /**
    * Slight tweaks for code inline.
    */

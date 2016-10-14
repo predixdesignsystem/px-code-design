@@ -32,6 +32,9 @@ PAGE. IT SHOULD NOT PROVIDE RULES FOR THE MODULE.
 @import "px-viewport-design/_base.viewport.scss";
 @import "px-typography-design/_base.typography.scss";
 
+$inuit-enable-code--inline  : true;
+@import "../_base.code.scss";
+
 // Objects
 $inuit-enable-toggle--small : true;
 $inuit-enable-toggle--large : true;
