@@ -1,0 +1,28 @@
+sudo: required
+dist: trusty
+language: node_js
+node_js:
+- stable
+branches:
+  only:
+  - master
+before_script:
+- npm install bower
+- export PATH=$PWD/node_modules/.bin:$PATH
+- bower install
+script:
+- cd $TRAVIS_BUILD_DIR/scripts
+- chmod 755 ghp.sh
+- "./ghp.sh"
+before_install:
+- if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then openssl aes-256-cbc -k "$password"
+  -in id_rsa.enc -out deploy_key -d; fi
+env:
+  global:
+  - secure: J+vR12LGBX320ZX9ugg/nMOsOipJjaqHnaqwwQa1x4uqAOL+paNCpTfPW5AI7atTHVevCQJ/sLboBTO20cWofgSbHRGGx46SUPNETE1R+Alk8aCZyzjg8yF5UblA7olv2iiQZlggaW+kzia1gA/HDjoIsHNJzMfD5856gQcXwfID4cUA4uTu+XWPtL9TAFmQ3bHZPYyT7XWhbW3Lf27dyEZ4zRpITJC400+thkjturAuTyDhOuGT36MivfI5nd8Mfi6eLifQj+LcDhU2aTiFYNelkyd5LJuUlDQumbDU6SxcUf9EvhFr95OANEAtXeo4z2aWtgaPD7D0ovnud/9JXDSGSE6V5Z0oHr2jMUIzzlBiKIGHkuP81BaWeQtpCncE2Pz9hYEA51EWL3ui5WlRMWyhZXKMOADIqGIvWyY0BoJJbhUROi/sSquf+mjbBzDIRYdwPi8vj4WCbT1311MMinyLXCH1jzBprSZai+t573W/RW8011d+YScGP4m5Nj/YstQMCXA1ZNGUTCvwF4bjLk6nQlesYlluRwM7u8LHuGw/ECUQ7nkBqYrOU/pg2e2Z7/8vg57eNrP026bKHWjHDfh2F8exTSOjxMFVRY+xqEhdcply5soV9DlFmebtqGbGNmpvLFztGKXtCAUwjUb3rAhs4O8lZlmM22bBVT2qyK8=
+  - secure: jhvHVYWdameZBYU6f/cD2r8SY0y3qGZBjRbhujpuMnApvFG2ZSm/jbW+2wc9PRIkM9v3WMG5sHEJoYtDblfA/kEjafqRV8MbzKBIeYhrQUW4+vEw+8c6NKsS+pIof0mQz/15JKzqku/TXI4nJ479f+2gWBzv98Wwa08t/+v88cfOa+meoo0DcjDK0GDOpZsnUBslRlCKkPtcj0Z+0u/Owg35ljcIfhopKqQV0YxvYbo+GJjeuSmZLKQA+o5aFrlR6K54YonoN2w1hDriQnD6EJQEhpvY8/awRhMm3SoFZF3iT0lisDNnq6ItdfZEjXa0lqhLXGRRy/zKDvWdAZn+PCJRE9sp8lOcl8HiiXNuGWcOuDUlPSTA1GBmbz2gKRi7MH+7sjnEFi1FOkr2j2FJRJ46Gmov2SQtD7AbzXhWU2hJP1BRyhurEMFOGdgQ+7xVoVFmmtZ3TlgHOGtMcghQ1YIVIRWvUDlobaqNrldCUxOcoG77Z0r6j5QqKvrLTKS1xsm+zHJJT9tLbsDFKrFpClLQu+bMaOWfZ0qHAwGxl3ogqAOq96CEOSj13WValrNMF0fT2XzK84pMrQthb2WnBeAic101r3oqO8THb2unZj6C/CxePNWlxzhi5N+MsmfornPP5YfL2opupnRG11NjgtIhSDGsXR4JCWIna1/Lku0=
+  - secure: GOQydnYDZuFgGQOGfjOpUBob1CLy5ysCY+F4QG89o9E8vuFhcFQdp3zWnbCYdzf2Lq1oYvM+aNjBosdGyjVqdjjrssg11hvdbn6cQzrxQW36K6WURq5Z9L48trz5t2zt+FP04ge1jFR/5eNHZTG3f0bXpeZ6gHLEFzR23PjyxV+cED3AH2I28MaS64ghiXU5MgtUtqPZgDGFjy0hy7wnqQ/KIoGToStMM4qNC3pWVaMjC/OCoqF0lNvDD9x7vPtrzRzz/QxobAUMjYeQ//8h/Rfd/D2Nn3nm5FIU0HPEtRaGgYRU+iklWyxIqxA3iYjy4CVFf4QxeaKhreMEA4LBlJNU5Fmak6W35OKH6GiuEC3x0eMlZ/7iqWbotxWI9WDjXDtwsFXwhBVOftPLGzIFbFFLUVEHC/5+NU5Rf+KI8Ngr/cyqt7xsmxJ2idSfzl8PWqtZ/PanzC1GXa8VjF9wDVnaMFFqD8z202hCHHAiPB4DkiMmKwP8CBf1HIX9GfJEqwS3K2sj0nASmp6NxOaFMlkAul+q2H4USwQaiNZHmyTY9lT8mJOXVIROT62+Ou2neb8xZ+8rALt7yBDX8m9EkTYfVxr0dzeyLxyvkXydXCmCgUPL9HvYtdc9glXOiDuD2z0QK47ErTRO612D+91TOpmNviX1jvPKyXvq8jaBbmA=
+after_success:
+- cd $TRAVIS_BUILD_DIR/scripts
+- chmod 755 ghp.sh
+- "./ghp.sh"
