@@ -22,7 +22,3 @@ env:
     secure: Nw6saIWgWSL/fLhiwFf43TknivU5MKCA7Jmh68yHxSb9WEnO+9Wvb0zACs/jGjbJxPlHfXq3O91iC/KoeMj4SOa9/FVhfLDXEPrjJWDJJgsURTVj8M3M6IO49oB/s8+ri0cqO341tAAysh+WWdhG8eodUpy7757XBzRiENSLltO7fihaV270hckZCbheJOwW35461I2pZlWfJRXULDiUwdUffeHhsd7Jhbjl54e6XWWsqWXrsfj50AbQgOB37qRq6y0J1c+Ai7q3aqr055m2mtXhwHETiSaIGVSXFfduDPzJvYNDpq2QX60lal01mxKB3L7Pfo4E8qy0XQWgt7P0OY/6DTTE+j/YwT/PEV+suXgTO0MKwO/nPF4HAtJPQmRKstl0xKLkYXDJ2ZbS+7Fj0XcLuMEoP9I8idJMcoqtHDBs3uVZCCCiQAKpEBbw/sCuEN+BR2GGTE9qmcY+38Vw/LhIlaAF2n+x4jvKs3JwL+Iiv9xqImYfeYn7pprZxgjeGS5Eham8rvgRaZGc5xlYsHa1rdcns7DortPXN6e3jCFl71n8ZOWpaN8S2ENU+XrD7sTsYVWstfkeIHuJkmFvM2nuT9aYwFUjdIHLxyn6CtgiAFUvteuZhkoFJtNEpAHB0bm9fifr/k7MCMCkNQMY4nBRETYiEYfbE/jl825090I=
 before_install:
   - if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then openssl aes-256-cbc -k "$password" -in id_rsa.enc -out deploy_key -d; fi
-after_success:
-- cd $TRAVIS_BUILD_DIR/scripts
-- chmod 755 ghp.sh
-- "./ghp.sh"

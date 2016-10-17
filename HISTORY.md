@@ -1,6 +1,10 @@
+v0.2.12
+==============================
+* added correct discription of component for demo
+
 v0.2.11
 ==============================
-* fixed travis setup 
+* fixed travis setup
 
 v0.2.11
 ==============================
