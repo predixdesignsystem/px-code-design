@@ -1,3 +1,8 @@
+v0.2.16
+==============================
+* Updated dependencies
+* Updated boilerplate files
+
 v0.2.12
 ==============================
 * added correct discription of component for demo
