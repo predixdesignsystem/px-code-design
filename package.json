@@ -1,6 +1,6 @@
 {
     "name": "px-code-design",
-    "version": "0.2.19",
+    "version": "0.2.20",
     "description": "Code snippets for Predix Experience",
     "private": false,
     "scripts": {

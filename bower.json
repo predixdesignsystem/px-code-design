@@ -1,6 +1,6 @@
 {
     "name": "px-code-design",
-    "version": "0.2.19",
+    "version": "0.2.20",
     "authors": [
         "General Electric"
     ],
@@ -27,6 +27,6 @@
     "devDependencies": {
         "px-buttons-design": "^0.4.30",
         "px-starter-kit-design": "^0.6.0",
-        "px-sass-doc": "^0.2.9"
+        "px-sass-doc": "^0.2.10"
     }
 }
