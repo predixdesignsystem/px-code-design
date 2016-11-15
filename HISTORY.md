@@ -1,13 +1,14 @@
+v0.2.22
+==================
+* added style variables for theming
 
 v0.2.21
 ==================
 * bumping sassdoc to propogate clipboard changes
 
-
 v0.2.20
 ==================
 * bumping all version of px-sass-doc to get px-clipboard update
-
 
 v0.2.19
 ==================
