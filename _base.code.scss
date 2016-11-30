@@ -17,19 +17,19 @@ $inuit-code-namespace       : $inuit-namespace !default;
 ///
 /// @group px-code-design:variables:style
 /// @type Color [default]
-$inuit-code-color           : $primary-blue-pressed !default;
+$inuit-code-color           : var(--px-code-text-color, $primary-blue-pressed) !default;
 
 /// Sets the code Background color.
 ///
 /// @group px-code-design:variables:style
 /// @type Color [default]
-$inuit-code-background      : $gray1 !default;
+$inuit-code-background      : var(--px-code-background-color, $gray1) !default;
 
 /// Sets the code Border color.
 ///
 /// @group px-code-design:variables:style
 /// @type Color [default]
-$inuit-code-border-color    : $gray3 !default;
+$inuit-code-border-color    : var(--px-code-border-color, $gray3) !default;
 
 /// Generates the CSS for inline code snippets
 ///
