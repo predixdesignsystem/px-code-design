@@ -1,3 +1,7 @@
+v0.2.23
+==================
+* remove CSS style variables from 0.4.X release track
+
 v0.2.22
 ==================
 * added style variables for theming
