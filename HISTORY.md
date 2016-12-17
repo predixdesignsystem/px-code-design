@@ -1,3 +1,7 @@
+v1.1.2
+==================
+* updated px-colors-design version
+
 v1.1.1
 ==================
 * Update missed design depndencies
