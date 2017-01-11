@@ -1,3 +1,7 @@
+v1.1.3
+==================
+* changing ghp.sh to account for Alpha releases
+
 v1.1.2
 ==================
 * updated px-colors-design version
