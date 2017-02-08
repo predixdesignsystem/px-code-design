@@ -1,32 +1,38 @@
 {
-    "name": "px-code-design",
-    "version": "1.1.4",
-    "authors": [
-        "General Electric"
-    ],
-    "description": "Code snippets for Predix Experience",
-    "main": "_base.code.scss",
-    "keywords": [
-        "code",
-        "px",
-        "sass"
-    ],
-    "homepage": "https://github.com/PredixDev/px-code-design.git",
-    "private": false,
-    "ignore": [
-        "**/.*",
-        "node_modules",
-        "bower_components",
-        "test",
-        "tests"
-    ],
-    "dependencies": {
-        "px-colors-design": "^0.3.0",
-        "px-defaults-design": "^1.0.2"
-    },
-    "devDependencies": {
-        "px-buttons-design": "^1.1.0",
-        "px-starter-kit-design": "^0.7.0",
-        "px-sass-doc": "^0.3.0"
-    }
+  "name": "px-code-design",
+  "version": "1.1.5",
+  "authors": [
+    "General Electric"
+  ],
+  "description": "Code snippets for Predix Experience",
+  "main": "_base.code.scss",
+  "keywords": [
+    "code",
+    "px",
+    "sass"
+  ],
+  "homepage": "https://github.com/PredixDev/px-code-design.git",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "sass",
+    "*.md",
+    "scripts",
+    "github",
+    "gulpfile.js",
+    "monogram-wdmk.png",
+    "wct.conf.json",
+    "test",
+    "OSS_Notice.pdf"
+  ],
+  "dependencies": {
+    "px-colors-design": "^0.3.0",
+    "px-defaults-design": "^1.0.2"
+  },
+  "devDependencies": {
+    "px-starter-kit-design": "^0.7.0",
+    "px-sass-doc": "^0.4.3"
+  }
 }
