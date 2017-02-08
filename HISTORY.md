@@ -1,6 +1,6 @@
 v1.1.5
 ==================
-* Updated to nen demo using px-demo 
+* Updated to new demo using px-demo 
 
 v1.1.4
 ==================
