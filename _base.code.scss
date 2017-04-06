@@ -17,7 +17,7 @@ $inuit-code-namespace       : $inuit-namespace !default;
 ///
 /// @group px-code-design:variables:style
 /// @type Color [default]
-$inuit-code-color           : var(--px-code-text-color, $primary-blue-pressed) !default;
+$inuit-code-color           : var(--px-code-text-color, $primary-pressed) !default;
 
 /// Sets the code Background color.
 ///

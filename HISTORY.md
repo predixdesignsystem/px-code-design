@@ -1,6 +1,10 @@
+v2.0.0
+==================
+* Updated to refreshed design palette 
+
 v1.1.5
 ==================
-* Updated to new demo using px-demo 
+* Updated to new demo using px-demo
 
 v1.1.4
 ==================
