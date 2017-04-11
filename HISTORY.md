@@ -1,6 +1,10 @@
+v2.0.1
+==================
+* fixed documentation per #2
+
 v2.0.0
 ==================
-* Updated to refreshed design palette 
+* Updated to refreshed design palette
 
 v1.1.5
 ==================
