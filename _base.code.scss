@@ -29,7 +29,7 @@ $inuit-code-background      : var(--px-code-background-color, $gray1) !default;
 ///
 /// @group px-code-design:variables:style
 /// @type Color [default]
-$inuit-code-border-color    : var(--px-code-border-color, $gray3) !default;
+$inuit-code-border-color    : var(--px-code-border-color, transparent) !default;
 
 /// Generates the CSS for inline code snippets
 ///
