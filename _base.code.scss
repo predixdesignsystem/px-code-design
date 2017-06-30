@@ -7,32 +7,31 @@
 @import "px-defaults-design/_settings.defaults.scss";
 @import "px-colors-design/_settings.colors.scss";
 
-/// Sets a prepended value for all generated classes
-///
+/// Prepended value for all generated classes
 /// @group px-code-design:variables:style
 /// @type String [default]
+/// @todo N/A
 $inuit-code-namespace       : $inuit-namespace !default;
 
-/// Sets the code Font color.
-///
+/// Code font color
 /// @group px-code-design:variables:style
 /// @type Color [default]
+/// @todo --px-code-text-color
 $inuit-code-color           : var(--px-code-text-color, $primary-hover) !default;
 
-/// Sets the code Background color.
-///
+/// Code background color
 /// @group px-code-design:variables:style
 /// @type Color [default]
+/// @todo --px-code-background-color
 $inuit-code-background      : var(--px-code-background-color, $gray1) !default;
 
-/// Sets the code Border color.
-///
+/// Code border color
 /// @group px-code-design:variables:style
 /// @type Color [default]
+/// @todo --px-code-border-color
 $inuit-code-border-color    : var(--px-code-border-color, transparent) !default;
 
-/// Generates the CSS for inline code snippets
-///
+/// Generate the CSS for inline code snippets?
 /// @group px-code-design:variables:flag
 /// @type Boolean [default]
 $inuit-enable-code--inline  : false !default;

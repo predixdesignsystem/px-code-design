@@ -73,7 +73,7 @@ gulp.task('serve', function() {
 
   gulp.watch(['css/*-styles.html', '*.html', '*.js', 'demo/*.html']).on('change', browserSync.reload);
   gulp.watch(['*.scss', 'sass/*.scss'], ['sass']);
-  
+
 });
 
 gulp.task('bump:patch', function(){
@@ -98,3 +98,14 @@ gulp.task('default', function(callback) {
   gulpSequence('clean', 'sass')(callback);
 });
 
+/**
+* Special task just for Sass design repos. Builds the Sassdoc documentation and
+* spits it out as `sassdoc.json`.
+*/
+gulp.task('sassdoc', function(){
+  gulp.src(['./*.scss'])
+    .pipe(sassdoc.parse())
+    .on('data', function(data){
+      fs.writeFileSync('sassdoc.json', JSON.stringify(data,null,4));
+    });
+});
