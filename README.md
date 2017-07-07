@@ -1,10 +1,10 @@
-# Code
+# px-code-design
 
-The Predix UI Code module provides styling for code snippets.
+The px-code-design module provides styling for code snippets.
 
 ## Dependencies
 
-Predix UI's Code module depends on two other Px modules:
+The px-code-design module depends on two other Px modules:
 
 * [px-colors-design](https://github.com/PredixDev/px-colors-design)
 * [px-defaults-design](https://github.com/PredixDev/px-defaults-design)
