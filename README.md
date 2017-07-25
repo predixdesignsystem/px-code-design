@@ -1,10 +1,10 @@
 # px-code-design
 
-The px-code-design module provides styling for code snippets.
+The Predix UI Code module provides styling for code snippets.
 
 ## Dependencies
 
-The px-code-design module depends on two other Px modules:
+The `px-code-design` module depends on two other Px modules:
 
 * [px-colors-design](https://github.com/PredixDev/px-colors-design)
 * [px-defaults-design](https://github.com/PredixDev/px-defaults-design)
@@ -45,4 +45,4 @@ Another, optional class can supplement the required base class. This class is av
 
 * `code--inline`: style for inline code snippets.
 
-view the full API [here](http://predixdev.github.io/px-code-design/)
+View the full API [here](http://predixdev.github.io/px-code-design/)
