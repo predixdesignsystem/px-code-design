@@ -2,8 +2,8 @@
     {
         "description": "Generate the CSS for inline code snippets?\n",
         "commentRange": {
-            "start": 34,
-            "end": 36
+            "start": 50,
+            "end": 52
         },
         "context": {
             "type": "variable",
@@ -11,8 +11,8 @@
             "value": "false",
             "scope": "default",
             "line": {
-                "start": 37,
-                "end": 37
+                "start": 53,
+                "end": 53
             }
         },
         "group": [
@@ -28,8 +28,8 @@
     {
         "description": "Prepended value for all generated classes\n",
         "commentRange": {
-            "start": 10,
-            "end": 13
+            "start": 26,
+            "end": 29
         },
         "context": {
             "type": "variable",
@@ -37,8 +37,8 @@
             "value": "$inuit-namespace",
             "scope": "default",
             "line": {
-                "start": 14,
-                "end": 14
+                "start": 30,
+                "end": 30
             }
         },
         "group": [
@@ -57,8 +57,8 @@
     {
         "description": "Code font color\n",
         "commentRange": {
-            "start": 16,
-            "end": 19
+            "start": 32,
+            "end": 35
         },
         "context": {
             "type": "variable",
@@ -66,8 +66,8 @@
             "value": "var(--px-code-text-color, $primary-hover)",
             "scope": "default",
             "line": {
-                "start": 20,
-                "end": 20
+                "start": 36,
+                "end": 36
             }
         },
         "group": [
@@ -86,8 +86,8 @@
     {
         "description": "Code background color\n",
         "commentRange": {
-            "start": 22,
-            "end": 25
+            "start": 38,
+            "end": 41
         },
         "context": {
             "type": "variable",
@@ -95,8 +95,8 @@
             "value": "var(--px-code-background-color, $gray1)",
             "scope": "default",
             "line": {
-                "start": 26,
-                "end": 26
+                "start": 42,
+                "end": 42
             }
         },
         "group": [
@@ -115,8 +115,8 @@
     {
         "description": "Code border color\n",
         "commentRange": {
-            "start": 28,
-            "end": 31
+            "start": 44,
+            "end": 47
         },
         "context": {
             "type": "variable",
@@ -124,8 +124,8 @@
             "value": "var(--px-code-border-color, transparent)",
             "scope": "default",
             "line": {
-                "start": 32,
-                "end": 32
+                "start": 48,
+                "end": 48
             }
         },
         "group": [
